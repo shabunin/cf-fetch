@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gui>
+  <properties>
+    <project>cf-fetch</project>
+    <designer>
+    </designer>
+    <size autoposition="scale">
+      <portrait width="768" height="1024" />
+      <landscape width="1024" height="768" />
+    </size>
+    <autoposition />
+    <imagefolder>assets</imagefolder>
+    <debug loaderrors="0" connectionerrors="0" />
+    <devices>
+      <device name="iPad Vladimir">1D98C775C2C564ADEBE03384980D3D72</device>
+    </devices>
+  </properties>
+  <themes>
+    <theme type="text" name=".white_tl_12"><![CDATA[ color: #FFFFFF; font-size: 12px; font-family: 'Arial'; text-align: left; vertical-align: top; font-weight: normal; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="button" name=".green[state='0']"><![CDATA[padding: 0px 0px 0px 0px;  filter: Alpha(Opacity=100); -moz-opacity:1; opacity: 1; background-color: #00FF00; color: #FFFFFF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".green[state='1']"><![CDATA[padding: 0px 0px 0px 0px;  filter: Alpha(Opacity=50); -moz-opacity:0.5; opacity: 0.5; background-color: #00FF00; color: #FFFFFF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+  </themes>
+  <scripts>
+    <script name="fetch.js" />
+    <script name="userMain.js" />
+  </scripts>
+  <page name="Startup" folder="" j="0" tags="" transition="" subtype="" time="0" ease="" start="1">
+    <portrait />
+    <landscape>
+      <txt j="1" x="42" y="119" w="337" h="578" t="white_tl_12" wrap="False" l="0" tags="">body if success</txt>
+      <txt j="2" x="621" y="128" w="337" h="578" t="white_tl_12" wrap="False" l="0" tags="">error if any</txt>
+      <btn j="0" x="36" y="29" w="120" h="42" t="green" flip="None" sim="1" l="0" s="1" tags="" js="test('http://google.com');">
+        <inactive s="0">test google.com</inactive>
+        <active s="0">test google.com</active>
+      </btn>
+      <btn j="0" x="168" y="29" w="142" h="42" t="green" flip="None" sim="1" l="0" s="1" tags="" js="test('http://commandfusion.com')">
+        <inactive s="0">commandfusion.com</inactive>
+        <active s="0">commandfusion.com</active>
+      </btn>
+    </landscape>
+  </page>
+</gui>
